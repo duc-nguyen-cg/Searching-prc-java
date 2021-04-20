@@ -14,6 +14,7 @@ public class AlgorithmComplexityTest {
             /* Tăng giá trị tần suất */
             frequentChar[ascii] += 1;                              //{4}
         }
+        //O(n)
 
         int max = 0;                                             //{5}
         char character = (char) 255; /* empty character */      //{6}
@@ -24,8 +25,9 @@ public class AlgorithmComplexityTest {
             }
         }
         System.out.println("The most appearing letter is '" + character + "' with a frequency of " + max + " times");
+        //O(255)
 
-
-        //O(n)
+        //if inputString.length <= 255, the result is 255
+        //if inputString.length > 255, the result is O(n)
     }
 }
