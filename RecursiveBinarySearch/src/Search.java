@@ -2,7 +2,7 @@ public class Search {
 
     public static int RecursiveBinarySearch(int[] array, int first, int last, int value){
         int middle;
-        while (first <= last){
+        if (first <= last){
             middle = (first + last)/2;
             if (value < array[middle]){
                 return RecursiveBinarySearch(array, first, middle - 1, value);
